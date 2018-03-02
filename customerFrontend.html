@@ -1,0 +1,91 @@
+<html>
+	<head>
+	
+		<title>
+			Exercise3
+		</title>
+		
+		<link href="style.css" rel="stylesheet" type="text/css">
+		
+		<script src="formChecker.js"></script>
+		
+	</head>
+	
+	<body>
+	
+		<form action="customerBackend.php" method="post" onsubmit="return submitButton()">
+	
+			<h>
+				Items:
+			</h>
+		
+			<br>
+			Item 1: $5.00
+			<br>
+			<input type="number" id="item1" name="item1">
+			<br>
+		
+			<br>
+			Item 2: $10.00
+			<br>
+			<input type="number" id="item2" name="item2">
+			<br>
+		
+			<br>
+			Item 3: $20.00
+			<br>
+			<input type="number" id="item3" name="item3">
+			<br><br><br>
+		
+			<h>
+				Username
+			</h>
+			<br>
+			<input type="text" id="username" name="username"><br>
+		
+			<h>
+				Password
+			</h>
+			<br>
+			<input type="text" id="password" name="password">
+			<br><br><br>
+		
+			<h>
+				Shipping Options
+			</h>
+				<div>
+		
+					<input type="radio" id="7 Day" name="shipping" value="7 Day">
+					<label for="7 Day">
+						Free 7 Day
+					</label>
+					<br>
+
+					<input type="radio" id="Three Day" name="shipping" value="Three Day">
+					<label for="Three Day">
+						$5.00 Three Day
+					</label>
+					<br>			
+				
+					<input type="radio" id="Over Night" name="shipping" value="Over Night">
+					<label for="Over Night">
+						$50.00 Over Night
+					</label>
+					<br><br><br>
+		
+				</div>
+		
+			<button type="button" onclick="resetButton()">
+				Reset
+			</button>
+		
+			<br>
+		
+			<button type="submit">
+				Submit
+			</button>
+			
+		</form>
+	
+	</body>
+</html>
